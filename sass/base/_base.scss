@@ -1,0 +1,18 @@
+body {
+  color: white;
+  font-family: Lato;
+  background-color: black;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

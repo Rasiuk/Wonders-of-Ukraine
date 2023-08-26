@@ -1,0 +1,19 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // mobile style
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  // tablet-style
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  // desctop
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
