@@ -129,7 +129,11 @@ li {
   transform-origin: bottom;
   transform: rotateX(180deg);
   line-height: 1em;
-  background: linear-gradient(15deg, #fff -54.67%, rgba(255, 255, 255, 0) 58.38%);
+  background: linear-gradient(
+    15deg,
+    #fff -54.67%,
+    rgba(255, 255, 255, 0) 58.38%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -163,4 +167,4 @@ li {
   justify-content: center;
   gap: 15px;
   padding-bottom: 32px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
