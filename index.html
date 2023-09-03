@@ -22,38 +22,61 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <!-- header -->
-    <header>
-      <div class="header_container container">
-        <a href="./index.html"
-          ><img src="./img/Logo.svg" alt="Logo" width=""
-        /></a>
-        <ul>
-          <li>
-            <a href="#about"><h2>About us</h2></a>
-          </li>
-          <li>
-            <a href="#tour"><h2>Tour</h2></a>
-          </li>
-          <li>
-            <a href="#gallery"><h2>Galery</h2></a>
-          </li>
-          <li>
-            <a href="#"><h2>Contacts</h2></a>
-          </li>
-        </ul>
-      </div>
-    </header>
     <!-- hero -->
-    <div class="container">
-      <h1 class="hero_title">Unlock the Wonders of <span> Ukraine</span></h1>
-      <button type="button">
-        <a href="#tour">Our tour</a>
-      </button>
-      <ul>
-        <li><a href="https://web.telegram.org/a/">Telegram</a></li>
-        <li><a href="http://faceboock.com">Faceboock</a></li>
-        <li><a href="https://instagram.com">Instagram</a></li>
+    <!-- header -->
+    <div class="hero__container">
+      <header>
+        <div class="header_container">
+          <a href="./index.html"
+            ><img class="header__logo" src="./img/Logo.svg" alt="Logo" width=""
+          /></a>
+          <ul class="nav__menu">
+            <li class="nav__menu__item">
+              <a href="#about"><h2>About us</h2></a>
+            </li>
+            <li class="nav__menu__item">
+              <a href="#tour"><h2>Tour</h2></a>
+            </li>
+            <li class="nav__menu__item">
+              <a href="#gallery"><h2>Galery</h2></a>
+            </li>
+            <li class="nav__menu__item">
+              <a href="#contacts"><h2>Contacts</h2></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="hero__title__container">
+        <h1 class="hero_title">
+          Unlock the Wonders <br />
+          of <br />
+          <span class="reflection__title"> Ukraine</span>
+        </h1>
+        <button class="hero__btn" type="button">Our tour</button>
+      </div>
+      <ul class="hero__social__links">
+        <li>
+          <a href="https://web.telegram.org/a/">
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#telegram-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="http://faceboock.com">
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#facebook-logo"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com">
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#instagram-logo"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
     <!-- About  -->
@@ -84,80 +107,137 @@
     <section class="section" id="tour">
       <div class="container">
         <h2>Our tours</h2>
-        <ul class="tour__list">
-          <li class="tour__list-item">
-            <div class="tour__card">
-              <img class="tour__image" src="" alt="tour image" width="450" />
-              <h3 class="tour__title">Lake Synevyr and Shipit waterfall</h3>
-              <ul class="tour__item__plan">
-                <li>Departure from Lviv (07:00) / Stryi (08:00)</li>
-                <li>Pylypets (overview of Shipit waterfall and lunch)</li>
-                <li>
-                  Synevyr Pass (photographing and viewing of Carpathian
-                  panoramas)
-                </li>
-                <li>
-                  "Synevyr" National Park (brown bear rehabilitation center and
-                  transition to the lake)
-                </li>
-                <li>Stryi (21:00)/Lviv (return by 22:00)</li>
-              </ul>
-              <p class="tour__descriptions">
-                This very interesting excursion will introduce you to the most
-                beautiful lake of the Carpathians "Synevyr", the impressive and
-                magical waterfall lake Synevirm "Shypit", which is also located
-                in the Ukrainian Carpathians. You will have the opportunity to
-                try Soymivska and Kelechynska mineral springs, drinks and
-                delicious dishes of Carpathian cuisine and, of course, admire
-                the beautiful scenery of the unique Ukrainian Carpathians.
-              </p>
-              <ul>
-                <p>Includes:</p>
-                <li>Transfer</li>
-                <li>Travel insurance</li>
-                <li>Professional guide</li>
-                <li>Travel insurance</li>
-              </ul>
-              <button type="button">book</button>
-              <h2>Price: 2000UAH</h2>
-            </div>
-          </li>
-          <li class="tour__list-item">
-            <div class="tour__card">
-              <img class="tour__image" src="" alt="tour image" width="450" />
-              <h3 class="tour__title">Ancient History & Vibrant Present</h3>
-              <ul class="tour__item__plan">
-                <li>Departure from Kiev (08:00)</li>
-                <li>
-                  St. Sophia's Cathedral (iconic UNESCO World Heritage site)
-                </li>
-                <li>Golden Gate (historical monument visit)</li>
-                <li>Bessarabsky Market (tasting local delicacies)</li>
-                <li>
-                  Kiev Pechersk Lavra (exploration of the significant monastery)
-                </li>
-                <li>Return to Kiev by 20:00</li>
-              </ul>
-              <p class="tour__descriptions">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Veritatis atque perspiciatis quo dignissimos, libero magni
-                provident nobis cupiditate tempore aliquam culpa impedit maxime
-                praesentium ad quasi earum corrupti ducimus inventore.
-              </p>
-              <ul>
-                <p>Includes:</p>
-                <li>Transfer</li>
-                <li>Travel insurance</li>
-                <li>Professional guide</li>
-                <li>Travel insurance</li>
-              </ul>
-              <button type="button">book</button>
-              <h2>Price: 3000UAH</h2>
-            </div>
-          </li>
-          <button class="btn__prev-page">Prev</button>
-          <button class="btn__next-page">Next</button>
-        </ul>
+        <div class="slider">
+          <ul class="tour__list slider_line">
+            <li class="tour__list-item">
+              <div class="tour__card slider-item">
+                <img
+                  class="tour__image"
+                  src="./img/sinevir.png"
+                  alt="tour image"
+                  width="450"
+                />
+                <h3 class="tour__title">Lake Synevyr and Shipit waterfall</h3>
+                <ul class="tour__item__plan">
+                  <li>Departure from Lviv (07:00) / Stryi (08:00)</li>
+                  <li>Pylypets (overview of Shipit waterfall and lunch)</li>
+                  <li>
+                    Synevyr Pass (photographing and viewing of Carpathian
+                    panoramas)
+                  </li>
+                  <li>
+                    "Synevyr" National Park (brown bear rehabilitation center
+                    and transition to the lake)
+                  </li>
+                  <li>Stryi (21:00)/Lviv (return by 22:00)</li>
+                </ul>
+                <p class="tour__descriptions">
+                  This very interesting excursion will introduce you to the most
+                  beautiful lake of the Carpathians "Synevyr", the impressive
+                  and magical waterfall lake Synevirm "Shypit", which is also
+                  located in the Ukrainian Carpathians. You will have the
+                  opportunity to try Soymivska and Kelechynska mineral springs,
+                  drinks and delicious dishes of Carpathian cuisine and, of
+                  course, admire the beautiful scenery of the unique Ukrainian
+                  Carpathians.
+                </p>
+                <ul>
+                  <p>Includes:</p>
+                  <li>Transfer</li>
+                  <li>Travel insurance</li>
+                  <li>Professional guide</li>
+                  <li>Travel insurance</li>
+                </ul>
+                <button type="button">book</button>
+                <h2>Price: 2000UAH</h2>
+              </div>
+            </li>
+            <li class="tour__list-item">
+              <div class="tour__card">
+                <img
+                  class="tour__image"
+                  src="./img/history.png"
+                  alt="tour image"
+                  width="450"
+                />
+                <h3 class="tour__title">Ancient History & Vibrant Present</h3>
+                <ul class="tour__item__plan">
+                  <li>Departure from Kiev (08:00)</li>
+                  <li>
+                    St. Sophia's Cathedral (iconic UNESCO World Heritage site)
+                  </li>
+                  <li>Golden Gate (historical monument visit)</li>
+                  <li>Bessarabsky Market (tasting local delicacies)</li>
+                  <li>
+                    Kiev Pechersk Lavra (exploration of the significant
+                    monastery)
+                  </li>
+                  <li>Return to Kiev by 20:00</li>
+                </ul>
+                <p class="tour__descriptions">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Veritatis atque perspiciatis quo dignissimos, libero magni
+                  provident nobis cupiditate tempore aliquam culpa impedit
+                  maxime praesentium ad quasi earum corrupti ducimus inventore.
+                </p>
+                <ul>
+                  <p>Includes:</p>
+                  <li>Transfer</li>
+                  <li>Travel insurance</li>
+                  <li>Professional guide</li>
+                  <li>Travel insurance</li>
+                </ul>
+                <button type="button">book</button>
+                <h2>Price: 3000UAH</h2>
+              </div>
+            </li>
+            <li class="tour__list-item">
+              <div class="tour__card">
+                <img
+                  class="tour__image"
+                  src="./img/sea.png"
+                  alt="tour image"
+                  width="450"
+                />
+                <h3 class="tour__title">Lake Synevyr and Shipit waterfall</h3>
+                <ul class="tour__item__plan">
+                  <li>Departure from Lviv (07:00) / Stryi (08:00)</li>
+                  <li>Pylypets (overview of Shipit waterfall and lunch)</li>
+                  <li>
+                    Synevyr Pass (photographing and viewing of Carpathian
+                    panoramas)
+                  </li>
+                  <li>
+                    "Synevyr" National Park (brown bear rehabilitation center
+                    and transition to the lake)
+                  </li>
+                  <li>Stryi (21:00)/Lviv (return by 22:00)</li>
+                </ul>
+                <p class="tour__descriptions">
+                  This very interesting excursion will introduce you to the most
+                  beautiful lake of the Carpathians "Synevyr", the impressive
+                  and magical waterfall lake Synevirm "Shypit", which is also
+                  located in the Ukrainian Carpathians. You will have the
+                  opportunity to try Soymivska and Kelechynska mineral springs,
+                  drinks and delicious dishes of Carpathian cuisine and, of
+                  course, admire the beautiful scenery of the unique Ukrainian
+                  Carpathians.
+                </p>
+                <ul>
+                  <p>Includes:</p>
+                  <li>Transfer</li>
+                  <li>Travel insurance</li>
+                  <li>Professional guide</li>
+                  <li>Travel insurance</li>
+                </ul>
+                <button type="button">book</button>
+                <h2>Price: 2000UAH</h2>
+              </div>
+            </li>
+            <button class="btn__prev-page prev">Prev</button>
+            <button class="btn__next-page next">Next</button>
+          </ul>
+        </div>
       </div>
     </section>
     <!-- Gallery -->
@@ -341,5 +421,80 @@
         </ul>
       </div>
     </section>
+    <!-- Questions -->
+    <section class="section">
+      <div class="container">
+        <form class="questions__form" action="#">
+          <div class="form__descriptions">
+            <h2>Start travel</h2>
+            <p>
+              If you want to get an unforgettable trip, quickly fill out the
+              application and we will contact you during the day
+            </p>
+            <p>
+              We are ready to answer any questions and help choose the best tour
+            </p>
+          </div>
+          <label for="name"
+            >Name
+            <input type="text" id="name" name="name" />
+          </label>
+
+          <label for="tel"
+            >Phone <input type="tel" name="tel" id="tel"
+          /></label>
+
+          <label for="message">
+            <input
+              type="text"
+              name="message"
+              placeholder="Your message"
+              id=""
+            />
+          </label>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="section">
+      <div class="container">
+        <div class="footer__logo">
+          <img src="./img/Logo.svg" alt="Logo" />
+        </div>
+        <div class="menu__footer">
+          <ul>
+            <li>
+              <a href="#about"><h2>About us</h2></a>
+            </li>
+            <li>
+              <a href="#tour"><h2>Tour</h2></a>
+            </li>
+            <li>
+              <a href="#gallery"><h2>Galery</h2></a>
+            </li>
+            <li>
+              <a href="#contacts"><h2>Contacts</h2></a>
+            </li>
+          </ul>
+        </div>
+        <div class="adress" id="contacts">
+          <a href="tel:+38097-123-11-11">38097-123-11-11</a>
+          <a href="mailto:WondersOfUkraine@gmail.com"
+            >WondersOfUkraine@gmail.com</a
+          ><a
+            href="https://goo.gl/maps/gBX784vLAGZZmxPi7"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Lviv, Zaporyzhka, 198</a
+          >
+          <ul class="cocial__links">
+            <li><a href="https://web.telegram.org/a/">Telegram</a></li>
+            <li><a href="http://faceboock.com">Faceboock</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="/js/slider.js" defer></script>
   </body>
 </html>
