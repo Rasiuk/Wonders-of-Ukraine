@@ -37,7 +37,6 @@ img {
 
 .section {
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -59,6 +58,7 @@ li {
   font-weight: 400;
   line-height: 140%; /* 56px */
   letter-spacing: 0.4px;
+  margin-bottom: 32px;
 }
 
 .container {
@@ -79,6 +79,21 @@ li {
   .container {
     width: 1200px;
   }
+}
+
+.slider {
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.slider_line {
+  display: flex;
+  transition: all ease 1s;
+}
+
+.tour__list_item {
+  display: block;
+  width: 454px;
 }
 
 .hero__container {
@@ -176,8 +191,25 @@ li {
   padding-bottom: 32px;
 }
 
-.about__us__container {
-  background-image: url("../../img/Logo.svg");
-  background-size: cover;
+.about__section {
+  background-image: url("../../img/backgroud-about-us.png");
   background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__us__container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about__description {
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.16px;
+}
+.about__description:not(:last-child) {
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
